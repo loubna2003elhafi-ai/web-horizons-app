@@ -1,0 +1,73 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f4f4f9, rgb(236, 230, 224));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    background: #ffffff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+h1 {
+    font-family:Palatino , URW Palladio L , serif ;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333333;
+}
+.InputPassGroup {
+    margin-bottom: 15px;
+    text-align: left;
+}
+.InputPassGroup label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #060505;
+}
+.InputPassGroup input {
+    width: 100%;
+    padding: 10px ;
+    padding-right: 0;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.InputPassGroup input:focus {
+    border-color: #6c63ff;
+    outline: none;
+}
+.btn {
+    background: black;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.5s;
+}
+.btn:hover {
+    background: rgb(53, 53, 53);
+}
+p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666666;
+}
+p a {
+    color: rgb(254, 208, 152);
+    text-decoration: none;
+}
+p a:hover {
+    text-decoration: underline;
+}

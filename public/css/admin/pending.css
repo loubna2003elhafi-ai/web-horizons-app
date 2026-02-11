@@ -1,0 +1,170 @@
+/* pending.css */
+
+/* Container principal */
+.users-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Grille des utilisateurs */
+.users-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Carte d'utilisateur */
+.user-card.pending {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-card.pending .user-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.user-card.pending .user-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #ffc107;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.user-card.pending .user-info h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.user-card.pending .user-email {
+    font-size: 14px;
+    color: #666;
+}
+
+.user-card.pending .user-status.pending {
+    margin-left: auto;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: #fff3cd;
+    color: #856404;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.user-card.pending .user-details {
+    margin-bottom: 15px;
+}
+
+.user-card.pending .detail-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.user-card.pending .detail-item .label {
+    color: #666;
+}
+
+.user-card.pending .detail-item .value {
+    color: #333;
+    font-weight: bold;
+}
+
+.user-card.pending .user-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user-card.pending .role-form select {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.user-card.pending .approval-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.user-card.pending .btn-approve, .user-card.pending .btn-reject {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.user-card.pending .btn-approve {
+    background-color: #28a745;
+    color: white;
+}
+
+.user-card.pending .btn-reject {
+    background-color: #dc3545;
+    color: white;
+}
+
+.user-card.pending .btn-approve:hover, .user-card.pending .btn-reject:hover {
+    opacity: 0.9;
+}
+
+/* Pagination */
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination a, .pagination span {
+    padding: 8px 12px;
+    margin: 0 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.pagination span {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+/* Message pour aucune demande */
+.no-users {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 16px;
+}
+
+.no-users .btn-back {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.no-users .btn-back:hover {
+    opacity: 0.9;
+}
